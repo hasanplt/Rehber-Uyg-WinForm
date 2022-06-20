@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cfe09c73-4aac-4e42-90cf-47c1bdc21ddb": {
+      "ProjectGuid": "cfe09c73-4aac-4e42-90cf-47c1bdc21ddb",
+      "DisplayName": "RehberUygProje",
+      "ColorIndex": 0
+    },
+    "e439e048-2ff8-401b-9135-b491af782963": {
+      "ProjectGuid": "e439e048-2ff8-401b-9135-b491af782963",
+      "DisplayName": "EntityLayer",
+      "ColorIndex": 1
+    },
+    "1797d4b4-daa2-47fa-b9f5-393d1ce631f2": {
+      "ProjectGuid": "1797d4b4-daa2-47fa-b9f5-393d1ce631f2",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 2
+    },
+    "a71eb9b3-4ccb-4922-8efb-899c29139d9a": {
+      "ProjectGuid": "a71eb9b3-4ccb-4922-8efb-899c29139d9a",
+      "DisplayName": "LogicLayer",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Diğer Dosyalar",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}

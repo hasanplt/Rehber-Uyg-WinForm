@@ -1,0 +1,12 @@
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\bin\Debug\EntityLayer.dll
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\bin\Debug\EntityLayer.pdb
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\obj\Debug\LogicLayer.csproj.AssemblyReference.cache
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\obj\Debug\LogicLayer.csproj.CopyComplete
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\LogicLayer\obj\Debug\LogicLayer.pdb

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RehberModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="varchar" MaxLength="50" />
+    <Property Name="Soyad" Type="varchar" MaxLength="50" />
+    <Property Name="KullaniciAd" Type="varchar" MaxLength="50" />
+    <Property Name="Sifre" Type="varchar" MaxLength="100" />
+    <Property Name="FotografAdres" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="YalnisGirisLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zaman" Type="datetime" />
+    <Property Name="KId" Type="int" />
+  </EntityType>
+  <Association Name="FK_YalnisGirisLog_Kullanici">
+    <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="0..1" />
+    <End Role="YalnisGirisLog" Type="Self.YalnisGirisLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kullanici">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="YalnisGirisLog">
+        <PropertyRef Name="KId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RehberModelStoreContainer">
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YalnisGirisLog" EntityType="Self.YalnisGirisLog" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_YalnisGirisLog_Kullanici" Association="Self.FK_YalnisGirisLog_Kullanici">
+      <End Role="Kullanici" EntitySet="Kullanici" />
+      <End Role="YalnisGirisLog" EntitySet="YalnisGirisLog" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbRehberModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KullaniciAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FotografAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="YalnisGirisLog" Relationship="Self.FK_YalnisGirisLog_Kullanici" FromRole="Kullanici" ToRole="YalnisGirisLog" />
+  </EntityType>
+  <EntityType Name="YalnisGirisLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zaman" Type="DateTime" Precision="3" />
+    <Property Name="KId" Type="Int32" />
+    <NavigationProperty Name="Kullanici" Relationship="Self.FK_YalnisGirisLog_Kullanici" FromRole="YalnisGirisLog" ToRole="Kullanici" />
+  </EntityType>
+  <Association Name="FK_YalnisGirisLog_Kullanici">
+    <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="0..1" />
+    <End Role="YalnisGirisLog" Type="Self.YalnisGirisLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kullanici">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="YalnisGirisLog">
+        <PropertyRef Name="KId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DbRehberEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" />
+    <EntitySet Name="YalnisGirisLog" EntityType="Self.YalnisGirisLog" />
+    <AssociationSet Name="FK_YalnisGirisLog_Kullanici" Association="Self.FK_YalnisGirisLog_Kullanici">
+      <End Role="Kullanici" EntitySet="Kullanici" />
+      <End Role="YalnisGirisLog" EntitySet="YalnisGirisLog" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

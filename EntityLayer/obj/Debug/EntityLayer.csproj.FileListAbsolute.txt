@@ -1,0 +1,6 @@
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\hsnap\Desktop\ANA DOSYA\Yazılım\c#\ogrenim\ASİLPROJE\EntityLayer\obj\Debug\EntityLayer.pdb
