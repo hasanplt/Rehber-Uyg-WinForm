@@ -1,3 +1,3 @@
 # Rehber Uyg WinForm
  
-C# ile Windows Form ile ilk uygulamam.
+C# Windows Form ile ilk uygulamam.
